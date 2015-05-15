@@ -1,5 +1,5 @@
 # NYU_Libreserve_2.0
-This script serves to automatically reserve a study room at NYU by multithreading and [selenium](http://selenium.googlecode.com/git/docs/api/py/index.html#installing).
+This script serves to automatically reserve a study room at NYU by multithreading, [selenium](http://selenium.googlecode.com/git/docs/api/py/index.html#installing) and [PhantomJS](http://phantomjs.org/download.html).
 
 ## Features
 * Automatically read users' login information and reservation info from a text file, and then modify the reservation date to the next preference.
@@ -7,7 +7,7 @@ This script serves to automatically reserve a study room at NYU by multithreadin
 * The default "Select length" is 2 hours. You can change it in the source code.
 
 ## Usage
-1. Make sure that you have the python module [selenium](http://selenium.googlecode.com/git/docs/api/py/index.html#installing) installed.
+1. Make sure that you have the [selenium](http://selenium.googlecode.com/git/docs/api/py/index.html#installing)  and [PhantomJS](http://phantomjs.org/download.html) installed.
 2. Create a text file named 'userinfo.txt' at the directory of the script.
 3. Fill in users' information and reservation info in the following format (each line contains the reservation info of one user' account):
   * NetID Password Month Day Hour Am/Pm
