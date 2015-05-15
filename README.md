@@ -2,7 +2,7 @@
 This script serves to automatically reserve a study room at NYU by multithreading, [selenium](http://selenium.googlecode.com/git/docs/api/py/index.html#installing) and [PhantomJS](http://phantomjs.org/download.html).
 
 ## Features
-* Automatically read users' login information and reservation info from a text file, and then modify the reservation date to the next preference.
+* Automatically read users' login information and reservation info from a text file. After reservation, modify the reservation date to the next preference.
 * There is a list indicating the pripority of several options of room numbers. You can change it in the source code.
 * The default "Select length" is 2 hours. You can change it in the source code.
 
