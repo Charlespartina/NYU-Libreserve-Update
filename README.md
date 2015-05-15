@@ -11,7 +11,7 @@ This script serves to automatically reserve a study room at NYU by multithreadin
 2. Create a text file named 'userinfo.txt' at the directory of the script.
 3. Fill in users' information and reservation info in the following format (each line contains the reservation info of one user' account):
   * NetID Password Month Day Hour Am/Pm
-  * For Example, the text `ph301 12345yhnbhy 9 4 8 pm` will tell the script to reserve a study room at at 8pm on Sep 4th .
+  * For Example, the text `ph301 12345yhnbhy 9 4 8 pm` will tell the script to reserve a study room at 8pm on Sep 4th .
 4. Launch the script and wait for the reservation complete 
 
 
