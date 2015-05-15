@@ -1,5 +1,5 @@
 # NYU_Libreserve_2.0
-This script serves to automatically reserve a study room at NYU by and multithreading and [selenium](http://selenium.googlecode.com/git/docs/api/py/index.html#installing).
+This script serves to automatically reserve a study room at NYU by multithreading and [selenium](http://selenium.googlecode.com/git/docs/api/py/index.html#installing).
 
 ## Features
 * Automatically read users' login information and reservation info from a text file, and then modify the reservation date to the next preference.
