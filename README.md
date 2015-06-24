@@ -1,4 +1,4 @@
-# NYU_Libreserve_2.0
+# NYU-Libreserve-2.0
 This script serves to automatically reserve a study room at NYU by multithreading, [selenium](http://selenium.googlecode.com/git/docs/api/py/index.html#installing) and [PhantomJS](http://phantomjs.org/download.html).
 
 ## Features
