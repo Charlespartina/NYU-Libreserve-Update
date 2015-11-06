@@ -142,10 +142,15 @@ def reservation(username, password, month, date, time_hour, ampm_identifier, roo
   try:
     browser = webdriver.PhantomJS()
     browser.implicitly_wait(200)
-    browser.get('https://login.library.nyu.edu/Shibboleth.sso/Login?target=https%3A%2F%2Flogin.library.nyu.edu%2Fpds%3Ffunc%3Dload-login%26institute%3DNYU%26calling_system%3Dhttps%3Alogin.library.nyu.edu%26url%3Dhttps%253A%252F%252Frooms.library.nyu.edu%252Fvalidate%253Freturn_url%253Dhttps%25253A%25252F%25252Flogin.library.nyu.edu%25252Fpds%25253Ffunc%25253Dsso%252526institute%25253DNYU%252526calling_system%25253Dhttps%25253Alogin.library.nyu.edu%252526url%25253Dhttps%2525253A%2525252F%2525252Frooms.library.nyu.edu%2525252Fvalidate%2525253Freturn_url%2525253Dhttps%252525253A%252525252F%252525252Frooms.library.nyu.edu%252525252F%2526https%253A%252F%252Flogin.library.nyu.edu_action%253Dnew%2526https%253A%252F%252Flogin.library.nyu.edu_controller%253Duser_sessions')
+    browser.get('https://login.library.nyu.edu/users/auth/nyu_shibboleth?auth_type=nyu&institution=NYU')
+    #browser.get('http://library.nyu.edu/services/group_study.html')
+    
+    #browser.get('https://login.library.nyu.edu/users/auth/nyu_shibboleth?auth_type=nyu&institution=NYU')
+
     print 'Browser Initialtion Complete. pid=', os.getpid(), 'NetID=', username
 
     # Login
+    browser.implicitly_wait(200)
     j_username = browser.find_element_by_name('j_username')
     j_password = browser.find_element_by_name('j_password')
     j_username.send_keys(username)
@@ -153,7 +158,7 @@ def reservation(username, password, month, date, time_hour, ampm_identifier, roo
     j_password.submit()
     print 'Login Complete ',username
  
-  
+    browser.get('http://rooms.library.nyu.edu')
     # Fill in reservation info
     hour = browser.find_element_by_name('reservation[hour]')
     minute = browser.find_element_by_name('reservation[minute]')
